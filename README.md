@@ -1,21 +1,21 @@
-# wav-decoder
-[![Build Status](https://img.shields.io/travis/mohayonao/wav-decoder.svg?style=flat-square)](https://travis-ci.org/mohayonao/wav-decoder)
-[![NPM Version](https://img.shields.io/npm/v/wav-decoder.svg?style=flat-square)](https://www.npmjs.org/package/wav-decoder)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://mohayonao.mit-license.org/)
+# wav-decoder-ts
+
+[![NPM Version](https://img.shields.io/npm/v/wav-decoder-ts.svg?style=flat-square)](https://www.npmjs.org/package/wav-decoder-ts)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > promise-based wav decoder
 
 ## Installation
 
 ```
-$ npm install wav-decoder
+npm install wav-decoder-ts
 ```
 
 ## API
 
 - `decode(src: ArrayBuffer, [opts: object]): Promise<AudioData>`
   - if provide an instance of `Buffer`, it is converted to `ArrayBuffer` like `Uint8Array.from(src).buffer` implicitly.
-  - `opts.symmetric` decode to symmetrical values (see [#14](https://github.com/mohayonao/wav-decoder/issues/14))
+  - `opts.symmetric` decode to symmetrical values
 - `decode.sync(src: ArrayBuffer, [opts: object]): AudioData`
   - synchronous version
 
@@ -55,4 +55,5 @@ readFile("foobar.wav").then((buffer) => {
 ```
 
 ## License
+
 MIT
